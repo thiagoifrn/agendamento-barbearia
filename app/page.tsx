@@ -3,6 +3,7 @@ import Header from "./_components/header"
 import { Button } from "./_components/ui/button"
 import { Input } from "./_components/ui/input"
 import Image from "next/image"
+import BookingItem from "./_components/booking-item"
 
 export default function Home() {
   return (
@@ -26,6 +27,12 @@ export default function Home() {
             className="rounded-xl object-cover"
           />
         </div>
+
+        <BookingItem />
+
+        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
+          Recomendados
+        </h2>
       </div>
     </div>
   )
